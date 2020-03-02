@@ -31,5 +31,5 @@ pwd 命令是用于显示当前的目录<br>
 命令显示从最近到最远的显示日志<br>
 * 把当前的版本回退到上一个版本<br>
 `git reset --hard HEAD^`<br>
-## 删除文件
+## 三、删除文件
 `$ git rm readme.txt`<br>
