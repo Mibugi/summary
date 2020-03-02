@@ -89,4 +89,6 @@ pwd 命令是用于显示当前的目录<br>
 * 标记为合并成功<br>
 `git add <filename>`<br>
 * 在合并改动之前查看<br>
-`git diff <source_branch> <target_branch>`<br>
+`git diff <source_branch> <target_branch>`<br><br>
+ 
+ 还有更多内容待将来完善(如果我还记得的话)<br>
