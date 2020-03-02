@@ -33,3 +33,31 @@ pwd 命令是用于显示当前的目录<br>
 `git reset --hard HEAD^`<br>
 ## 三、删除文件
 `$ git rm readme.txt`<br>
+## 四、检出仓库
+（从此开始我要换一个方式表达，打得太累了）<br>
+* 创建一个本地仓库的克隆版本<br>
+`git clone /path/to/repository`<br>
+* 如果是远端服务器上的仓库,命令会是这个样子<br>
+`git clone username@host:/path/to/repository`<br>
+## 五、推送
+* 提交到远端仓库<br>
+`git push origin master`<br>
+可以把 master 换成想要推送的任何分支<br>
+* 如果没有克隆现有仓库，并欲将库连接到某个远程服务器<br>
+`git remote add origin <server>`<br>
+## 六、分支
+* 创建一个叫做“feature_x”的分支，并切换<br>
+`git checkout -b feature_x`<br>
+* 切换回主分支<br>
+`git checkout master`<br>
+* 再把新建的分支删掉<br>
+`git branch -d feature_x`<br>
+## 七、更新、合并
+* 更新本地仓库至最新改动<br>
+`git pull`<br>
+* 以在工作目录中 获取（fetch） 并 合并（merge） 远端的改动。要合并其他分支到当前分支（例如 master）<br>
+`git merge <branch>`<br>
+* 标记为合并成功<br>
+`git add <filename>`<br>
+* 在合并改动之前查看<br>
+`git diff <source_branch> <target_branch>`<br>
