@@ -1,4 +1,9 @@
 # 有关对于Git的学习
+寒假期间根据组织要求学习git及github的使用，主要通过文字与视频的方式进行学习<br>
+[文字资料](https://github.com/sanyuankexie/ORG-POLICY/blob/master/mdflies/StartWithGit/StartWithGit.md#5)<br>
+[视频](https://www.bilibili.com/video/av20858020?p=10)<br>
+以下对学习内容进行记录
+
 ---
 ##### 目录
 <a href="#git01">一、Git是什么<br>
