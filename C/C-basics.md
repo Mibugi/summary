@@ -2,6 +2,8 @@
 
 #### 目录
 <a href="#git01">一、矩阵的操作<br>
+<a href="#git02">二、排序算法<br>
+<a href="#git03">三、字符串操作<br>
 
 <a name="git01"><br>
 ### 矩阵的操作
@@ -65,4 +67,48 @@
 `		}`<br>
 `	}`<br>
 `	if(biaozhi==0)    printf("not found\n");`<br>
+`}`<br>
+
+<a name="git02"><br>
+### 排序算法
+* 起泡排序<br>
+`void sort1(double a[ ],int n)` //起泡排序. n个元素存储在一维数组a中<br>
+`{	double t; `//辅助变量t,用于交换<br>
+`	for(int i=0;i<n-1;i++)`<br>
+`		for(int j=0;j<n-i-1;j++)`<br>
+`			if(a[j]>a[j+1]){t=a[j];a[j]=a[j+1];a[j+1]=t;}`<br>
+`}`<br>
+* 选择排序<br>
+`void sort2(double a[ ],int n)` //选择排序. n个元素存储在一维数组a中<br>
+`{	double t; int k;` //辅助变量k,记各趟排序的最小元素下标<br>
+`	for(int i=0;i<n-1;i++)`<br>
+`	{  	k=i;`<br>
+`		for(int j=i;j<n;j++)`  //可写成for(int j=i+1;j<n;j++) <br>
+`			if(a[k]>a[j])k=j;`<br>
+`           if(k!=i) {t=a[i];a[i]=a[k];a[k]=t;}`<br>
+`	}`<br>
+`}`<br>
+  
+<a name="git03"><br>
+### 字符串操作
+* 字符串（系统提供的库函数是strcat(),在头文件string.h中）<br>
+`void stringcat(char a[ ],char b[ ])`//将b中的字符串拼接到a的后面<br>
+`{	int i=0,j=0;`<br>
+`	while(a[i]!=‘\0’)i++;` // 思考与while(a[i++]);的区别 <br>
+`       while(b[j]!=‘\0’)`<br>
+`	{	  a[i]=b[j];`<br>
+`		   i++;j++;`<br>
+`	}`<br>
+`       a[i]=‘\0’;`<br>
+`}`<br>
+* 求精度-利用已知公式（例：求sin(x)）<br>
+已知sinx=x/1-x3/3!+x5/5!- x7/7!+…+(-1)n+1 x(2n-1)/(2n-1)!+…<br>
+`double sin(double x, double eps)` // 计算sinx的精度达到eps,如0.001<br>
+`{	double term, sum; int n=1;`<br>
+`	term=x;sum=0;`<br>
+`	while (fabs(term)>=eps)`<br>
+`        {	    sum=sum+term;n++;`<br>
+`		    term=-1*term*x*x/((2*n-2)*(2*n-1));`<br>
+`	}`<br>
+`	return sum;`<br>
 `}`<br>
