@@ -113,3 +113,25 @@
 `	return sum;`<br>
 `}`<br>
 
+* 创建有序链表，无序链表进行排序<br>
+`node * addnode( node* head, int x) `//在有序链表head中插入元素x,仍有序<br>
+`{	node *p1,*p2, *p=new node;`//生成一个结点p<br>
+`	p->data=x; p->next=NULL;`//给结点p赋值<br>
+`	if(head==NULL) head=p;`//为空链表<br>
+`	else`<br>
+`	{		p1=p2=head;`<br>
+`       			while(p2 && x>p2->data){p1=p2;p2=p2->next;}`<br>
+`			if(p2==head) {p->next=p2;head=p;}`<br>
+`			else {p->next=p2;p1->next=p;}`<br>
+`	}`<br>
+`      return    head;`<br>
+
+* 倒序算法(倒序一个整数数组)<br>
+`void reverse(char a[ ],int n) `//对一维数组n个元素进行倒序<br>
+`{	char t; int i;`<br>
+`	for( i=0;i<n/2;i++)`<br>
+`	{	   t=a[i];`<br>
+`		   a[i]=a[n-i-1];`<br>
+`		   a[n-i-1]=t;`<br>
+`	}`<br>
+`}`<br>
