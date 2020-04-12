@@ -4,6 +4,10 @@
 <a href="#git01">一、矩阵的操作<br>
 <a href="#git02">二、排序算法<br>
 <a href="#git03">三、字符串操作<br>
+<a href="#git04">四、求精度<br>
+<a href="#git05">五、链表操作<br>
+<a href="#git06">六、倒序算法<br>
+<a href="#git07">七、斐波那契数列<br>
 
 <a name="git01"><br>
 ### 矩阵的操作
@@ -101,6 +105,8 @@
 `	}`<br>
 `       a[i]=‘\0’;`<br>
 `}`<br>
+<a name="git04"><br>
+### 求精度 
 * 求精度-利用已知公式（例：求sin(x)）<br>
 已知sinx=x/1-x3/3!+x5/5!- x7/7!+…+(-1)n+1 x(2n-1)/(2n-1)!+…<br>
 `double sin(double x, double eps)` // 计算sinx的精度达到eps,如0.001<br>
@@ -112,7 +118,8 @@
 `	}`<br>
 `	return sum;`<br>
 `}`<br>
-
+<a name="git05"><br>
+### 链表操作
 * 创建有序链表，无序链表进行排序<br>
 `node * addnode( node* head, int x) `//在有序链表head中插入元素x,仍有序<br>
 `{	node *p1,*p2, *p=new node;`//生成一个结点p<br>
@@ -125,7 +132,8 @@
 `			else {p->next=p2;p1->next=p;}`<br>
 `	}`<br>
 `      return    head;`<br>
-
+<a name="git06"><br>
+### 倒叙算法
 * 倒序算法(倒序一个整数数组)<br>
 `void reverse(char a[ ],int n) `//对一维数组n个元素进行倒序<br>
 `{	char t; int i;`<br>
@@ -135,3 +143,32 @@
 `		   a[n-i-1]=t;`<br>
 `	}`<br>
 `}`<br>
+
+<a name="git07"><br>
+### 斐波那契数列<br>
+* 使用单变量<br>
+`void fib(int n)` //使用单变量求前n项<br>
+`{	long f1=1,f2=1,f3;`<br>
+`     printf(“%d%d”,f1,f2);`<br>
+`	for(int i=3;i<=n;i++)`<br>
+`	{	   f3=f1+f2;`<br>
+`           printf(“%d”,f3);`<br>
+`           f1=f2;f2=f3;`<br>
+`	}`<br>
+`}`<br>
+* 使用数组<br>
+`#define N  40// N>=n`<br>
+`void fib(int n) `//使用数组，求前n项<br>
+`{	long f[N]={1,1};`<br>
+`	for(int i=2;i<N;i++)`<br>
+`		   f[i]=f[i-2]+f[i-1];`<br>
+`      for(i=0;i<N;i++)`<br>
+`	      printf(“%d”,f[i]);`<br>
+`}`<br>
+* 使用递归函数<br>
+`long fib(int n) `//使用递归函数，求第n项<br>
+`{	if(n==1 || n==2) return 1;`<br>
+`	else  return f(n-2)+f(n-1);	`<br>
+`}`<br>
+
+
