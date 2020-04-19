@@ -8,6 +8,7 @@
 <a href="#git05">五、链表操作<br>
 <a href="#git06">六、倒序算法<br>
 <a href="#git07">七、斐波那契数列<br>
+<a href="#git08">八、递归<br>
 
 <a name="git01"><br>
 ### 矩阵的操作
@@ -171,4 +172,25 @@
 `	else  return f(n-2)+f(n-1);	`<br>
 `}`<br>
 
-
+<a name="git08"><br>
+### 递归<br>
+* 直接递归<br>
+`void rec1(char c)`<br>
+`{ printf(“%c”,c);`<br>
+`  if (c==‘0’)  return;`<br>
+`  rec1(c-1);    `<br>
+` }`<br>
+`void main()`<br>
+`{  char c=‘3’;`<br>
+`    rec1(c);`<br>
+`}`<br>
+`void rec2(char c)`<br>
+`{` <br>
+`  if (c==‘0’)  return;`<br>
+`  rec2(c-1); `<br>
+`  printf(“%c”,c);`<br>
+` }`<br>
+`void main()`<br>
+`{  char c=‘3’;`<br>
+`    rec2(c);`<br>
+`}`<br>
