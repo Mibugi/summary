@@ -187,7 +187,7 @@ title="文字内容"
 <a name="5"><br>
 ### 五、特殊字符
 
-![img](https://github.com/Singularity-V206/summary/blob/master/img/teshuzifu.jpg)
+![img](https://github.com/Singularity-V206/summary/blob/master/img/teshufuhao.jpg)
 
 <a name="6"><br>
 
@@ -227,7 +227,7 @@ th表示表头部分(table head)
 
 ##### 3.表格属性
 
-![biaoge](C:\Users\10423\Desktop\biaoge.bmp)
+![biaoge](https://github.com/Singularity-V206/summary/blob/master/img/biaoge.png)
 
 这些属性要写到表格标签<table>里面去
 
