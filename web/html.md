@@ -187,7 +187,7 @@ title="文字内容"
 <a name="5"><br>
 ### 五、特殊字符
 
-![img](file:///C:\Users\10423\Documents\Tencent Files\1042354296\Image\C2C\Image1\[20JER6X$%}ZEW`0V$V{131.png)
+![img](https://github.com/Singularity-V206/summary/blob/master/img/teshuzifu.jpg)
 
 <a name="6"><br>
 
