@@ -8,6 +8,8 @@
 <a href="#4">注释<br>
 <a href="#5">特殊字符<br>
 <a href="#6">表格标签<br>
+<a href="#7">列表标签<br>
+<a href="#8">表单标签<br>
 
 <a name="1"><br>
 ### 一、基本操作
@@ -271,6 +273,7 @@ title="文字内容"
 
 删除多余单元格
 
+<a name="7"><br>
 ### 七、列表标签
 
 #### 1.无序列表
@@ -322,6 +325,7 @@ ol 中只嵌套 li
 
 定义列表的列表项内部可以使用段落、换行符、图片、链接以及其他列表等等。
 
+<a name="8"><br>
 ### 八、表单标签
 
 收集用户信息
@@ -372,7 +376,7 @@ input (单标签)元素有很多形态，根据不同的 *type* 属性。
 <input type="属性值" />
 ```
 
-![input_shuxing](C:\Users\10423\Desktop\github\summary\img\input_shuxing.png)
+![input_shuxing](https://github.com/Singularity-V206/summary/blob/master/img/input_shuxing.png)
 
 单选按钮输入
 
