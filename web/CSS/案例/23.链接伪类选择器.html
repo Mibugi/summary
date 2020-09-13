@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接伪类选择器</title>
+    <style>
+        /* 未访问过的链接 */
+        a:link {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #2564da;
+        }
+
+        a:hover {
+            color: #885998;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #36ff51;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">这是个链接</a>
+    <a href="https://www.w3school.com">未知的网站</a>
+</body>
+
+</html>
