@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="zr">左然</button>
+    <button id="ljh">陆景和</button> <br>
+
+    <img src="img/zuoran-lihui.png">
+
+    <script>
+        //  修改元素属性 src
+        //  1.获取元素
+        var zr = document.getElementById('zr');
+        var ljh = document.getElementById('ljh');
+        var img = document.querySelector('img');
+        //  2.注册事件 处理程序
+        ljh.onclick = function () {
+            img.src = 'img/lujinghe-lihui.png';
+            img.title = '陆景和';
+        }
+        zr.onclick = function () {
+            img.src = 'img/zuoran-lihui.png';
+            img.title = '左然';
+        }
+    </script>
+</body>
+
+</html>
